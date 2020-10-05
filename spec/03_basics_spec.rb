@@ -1,14 +1,27 @@
 require_relative '../lib/03_basics'
 
-describe 'who is the biggest number' do
+describe "bigger" do
   # Hint: 'def who_is_bigger(a, b, c)'
-  it 'tells me the biggest' do
+  it "tells me the biggest with nil" do
     expect(who_is_bigger(84, 42, nil)).to eq("nil detected")
+  end
+
+  it "tells me the biggest with nil" do
     expect(who_is_bigger(nil, 42, 21)).to eq("nil detected")
+  end
+
+  it "tells me the biggest is a" do
     expect(who_is_bigger(84, 42, 21)).to eq("a is bigger")
+  end
+
+  it "tells me the biggest is b" do
     expect(who_is_bigger(42, 84, 21)).to eq("b is bigger")
+  end
+
+  it "tells me the biggest is c" do
     expect(who_is_bigger(42, 21, 84)).to eq("c is bigger")
   end
+
 end
 
 describe 'crazy stuff on strings' do
