@@ -1,10 +1,3 @@
-
-#Giliane 
-#[1,2,3].reduce(:+)
-#=> 6
-#reduce can be used to sum a collection.
-
-
 #1- addition : x + y =addition
 def add(a,b)
   a.to_i + b.to_i
