@@ -1,24 +1,28 @@
 def who_is_bigger(a,b,c) 
-  max = 0
-  for element in list 
-  if element > max
-    max = element
-    return "#{max} is the biggest"
-  elsif i = nils
-    puts "nils detected"
+  if a == nil || b == nil || c == nil
+    return "nil detected"
+  elsif a >= b and a >= c
+    return "a is bigger"
+  elsif b >= a and b >= c
+    return "b is bigger"
+  else c >= a and c >= b
+    return "c is bigger"
   end
 end
 
-who_is_bigger(a,b,c)
+def reverse_upcase_noLTA(str)
+  return str.reverse.upcase.delete"LTA"
+end
 
-#could also specify for each case : 
-#def who_is_bigger(a,b,c) 
-  #if a>=b and a>=c
-  #puts "a is the biggest"
-  #elsif b>=a and b>=c
-  #puts "a is the biggest"
-  #elsif c>=a and c>=b
-  #puts "c is the biggest"
-  #else nils
-  #puts "nils detected"
-  
+def array_42(ary)
+  ary.each do |x|
+    if x == 42
+      return true 
+    end 
+  end
+  return false
+end 
+
+def magic_array(ary)
+  ary.flatten.sort.map{|i|i*2}.reject{|i| i%3==0}.uniq.sort
+end 
